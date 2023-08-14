@@ -1,0 +1,6 @@
+/usr/bin/gcc     -std=c99   -m64 -DSPEC -DNDEBUG -DSPEC_AUTO_BYTEORDER=0x12345678 -DHAVE_CONFIG_H=1 -DSPEC_MEM_IO -DSPEC_XZ -I. -Ispec_mem_io -Isha-2 -Icommon -Iliblzma/api -Iliblzma/lzma -Iliblzma/common -Iliblzma/check -Iliblzma/simple -Iliblzma/delta -Iliblzma/lz -Iliblzma/rangecoder  -g           -fopenmp -DSPEC_OPENMP -fno-strict-aliasing -fgnu89-inline   -DSPEC_LP64  -v >>compiler-version.tmpout 2>&1
+cat "compiler-version.tmpout"
+
+ CC_VERSION_OPTION:
+
+rm -rf compiler-version.tmpout
